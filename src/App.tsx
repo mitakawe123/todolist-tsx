@@ -17,12 +17,13 @@ const App = () => {
       setTodo("");
     }
   };
+  console.log(todos);
 
   return (
     <div className="App">
       <span className="heading">Taskify</span>
       <InputFields todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
-      <TodoList />
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 };
