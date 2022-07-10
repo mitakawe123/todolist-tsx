@@ -11,7 +11,12 @@ function TodoList({ todos, setTodos }: Props) {
   return (
     <div className="todos">
       {todos.map((todo) => (
-        <SignleTodo />
+        <SignleTodo
+          todo={todo}
+          key={todo.id}
+          todos={todos}
+          setTodos={setTodos}
+        />
       ))}
     </div>
   );

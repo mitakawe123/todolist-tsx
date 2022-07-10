@@ -17,7 +17,6 @@ const App = () => {
       setTodo("");
     }
   };
-  console.log(todos);
 
   return (
     <div className="App">
